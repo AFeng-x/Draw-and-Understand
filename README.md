@@ -29,7 +29,7 @@
 ## 📌 ToDo
 
 - ✅ The *testmini* set of MathVerse will be released at [🤗 Huggingface](https://huggingface.co/datasets/AI4Math/MathVerse) in a week.
-- ☑️ Coming soon: *CoT Evaluation results*, evaluation tools, and the entire MathVerse dataset
+- [x] Coming soon: *CoT Evaluation results*, evaluation tools, and the entire MathVerse dataset
 
 
 ## 👀 Introduction
