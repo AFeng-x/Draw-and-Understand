@@ -38,13 +38,13 @@
 The interaction between humans and artificial intelligence (AI) is a crucial factor that reflects the effectiveness of multimodal large language models (MLLMs). However, current MLLMs primarily focus on image-level comprehension and limit interaction to textual instructions, thereby constraining their flexibility in usage and depth of response. Therefore, we introduce the **Draw-and-Understand project**: a new model, a multi-domain dataset, and a challenging benchmark for visual prompting.
 
 <p align="center">
-    <img src="assets/figures/fig1.png" width="90%"> <br>
+    <img src="assets/figures/fig1.jpg" width="90%"> <br>
 </p>
 
 Specifically, the model is named **SPHINX-V**, a new multimodal large language model designed for visual prompting, equipped with a novel visual prompt encoder and a two-stage training strategy. SPHINX-V supports multiple visual prompts simultaneously across various types, significantly enhancing user flexibility and achieve a fine-grained and open-world understanding of visual prompts.
 
 <p align="center">
-    <img src="assets/figures/fig2.png" width="90%"> <br>
+    <img src="assets/figures/fig2.jpg" width="90%"> <br>
     Six different versions of each problem in <b>MathVerse</b> transformed by expert annotators.
 </p>
 
