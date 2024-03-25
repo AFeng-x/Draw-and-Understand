@@ -1,19 +1,25 @@
 <div align="center">
 
-<img src="assets/figures/sphinx-v_text.png" style="width: 40%" alt="SPHINX-V Logo"/>
+<img src="assets/figures/sphinx-v_text.png" style="width: 35%" alt="SPHINX-V Logo"/>
 
 </div>
 
 <div align="center">
 
 
-# Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want
+## Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want
 
-[Runpei Dong](https://runpeidong.github.io/), [Chunrui Han](), [Yuang Peng](https://yuangpeng.com/), [Zekun Qi](https://qizekun.github.io/), [Zheng Ge](https://joker316701882.github.io/), [Jinrong Yang](https://yancie-yjr.github.io/), [Liang Zhao](), [Jianjian Sun](https://scholar.google.com/citations?user=MVZrGkYAAAAJ&hl=en), [Hongyu Zhou](https://scholar.google.com/citations?user=i1PB3cEAAAAJ&hl=en), [Haoran Wei](https://scholar.google.com/citations?user=J4naK0MAAAAJ&hl=en), [Xiangwen Kong](), [Xiangyu Zhang](https://scholar.google.com/citations?user=yuB-cfoAAAAJ&hl=en), [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html) and [Li Yi](https://ericyi.github.io)
+[Weifeng Lin](), [Xinyu Wei](), [Ruichuan An](), [Peng Gao](), [Bocheng Zou4](), [Yulin Luo2](), [Siyuan Huang](), [Shanghang Zhang]() and [Hongsheng Li]()
 </div>
+
+<br>
 
 <div align="center">
 
-[![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://dreamllm.github.io/) [![Paper PDF](https://img.shields.io/badge/Paper-PDF-red.svg)](https://openreview.net/pdf?id=y01KGvd9Bw) [![Hugging Face](https://img.shields.io/badge/🤗-Hugging_Face-yellow.svg)](https://huggingface.co/collections/RunpeiDong/dreamllm-65fa8297e12a435e55e4b5ca) [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-blue.svg)](https://github.com/RunpeiDong/ChatDreamer-Private/blob/master/LICENSE)
+[![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://dreamllm.github.io/) [![arXiv Paper](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)](https://arxiv.org/pdf/2312.10032.pdf) [![Static Badge](https://img.shields.io/badge/Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://111.0.123.204:8000/) [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-blue.svg)](https://github.com/RunpeiDong/ChatDreamer-Private/blob/master/LICENSE)
+
+[[🌐 Webpage](https://mathverse-cuhk.github.io/)] [[📖 Paper](https://arxiv.org/pdf/2403.14624.pdf)] [[🤗 MDVP-Data](https://huggingface.co/datasets/AI4Math/MathVerse)] [[🤗 MDVP-Bench](https://huggingface.co/datasets/AI4Math/MathVerse)] 
+ [[🎮 Demo](https://mathverse-cuhk.github.io/#leaderboard)] [[🔍 Visualization](https://mathverse-cuhk.github.io/#visualization)]
+
 
 </div>
