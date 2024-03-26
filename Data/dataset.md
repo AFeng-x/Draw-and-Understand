@@ -2,9 +2,10 @@
 
 ### Stage 1 Pre-training Dataset
 
-- 1. Please download the transformed annotations of each dataset from [Stage-1 Training Annotations]().
+- Please download the transformed annotations of each dataset from [Stage-1 Training Annotations]().
 
-- 2. Please download the image from the official source.
+- Please download the image from the official source.
+
 | Data | Source |
 | --- |  ---: |
 | COCO 2014 | [Download](http://images.cocodataset.org/zips/train2014.zip) |
@@ -32,14 +33,14 @@
 
 **Important notice**: `Visual Genome` should contain all the vg images(VG_100K and VG_100K_2). Merge the image data from the VG_100K and VG_100K_2 folders into one.
 
-- 3. In each annotation JSON file, update the image path to reflect the location of the downloaded image data.
+- In each annotation JSON file, update the image path to reflect the location of the downloaded image data.
 
 
 ### Stage 2 Fine-tuning Dataset
 
-- 1. Please download the transformed annotations of each dataset from [Stage-2 Training Annotations]().
+- Please download the transformed annotations of each dataset from [Stage-2 Training Annotations]().
 
-- 2. Please download the image from the official source. The data for stages beyond stage 1 is list below:
+- Please download the image from the official source. The data for stages beyond stage 1 is list below:
 
 | Data | Source |
 | --- |  ---: |
