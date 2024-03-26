@@ -92,12 +92,12 @@ Specifically, the model is named **SPHINX-V**, a new multimodal large language m
 ## 🛠️ Install 
 
 1. Clone this repository and navigate to Draw-and-Understand folder
-```
+``` bash
 git clone https://github.com/AFeng-x/Draw-and-Understand.git
 cd Draw-and-Understand
 ```
 2. Install packages
-```
+``` bash
 # Create a new conda environment named 'sphinx-v' with Python 3.10
 conda create -n sphinx-v python=3.10 -y
 # Activate the 'sphinx-v' environment
@@ -106,12 +106,12 @@ conda activate sphinx-v
 pip install -r requirements.txt
 ```
 3. Optional: Install Flash-Attention
-```
+``` bash
 # Draw-and-Understand is powered by flash-attention for efficient attention computation.
 pip install flash-attn --no-build-isolation
 ```
 4. Install Draw-and-Understand as Python Packege
-```
+``` bash
 # go to the root directory of Draw-and-Understand
 cd Draw-and-Understand
 # install Draw-and-Understand
