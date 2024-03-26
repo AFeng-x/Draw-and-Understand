@@ -152,16 +152,23 @@ The all datasets for Stage-1(pre-training) and Stage-2(fine-tuning) can be found
 
 - **Prepare data**
   - Please download the annotations of our pre-training data and download the images from public open-source datasets. (Refer to the [Dataset preparation](./Data/dataset.md))
-  - You can find the pre-training configuration at [config](./accessory/config/data/vp_pretrain.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
 
 - **Stage1: Image-Visual Prompt-Text Alignment Pre-training**
-  - Please download our pretrained SPHINX-v2-1k[Hugging face](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-v2-1k)/[Baidu](https://pan.baidu.com/s/1PKCf515EGmSnSZ8teERHjQ?pwd=88z0)(提取码：88z0) After downloading, place the model in the "accessory/checkpoints/sphinx-v2-1k" directory.
+  - Please download our pretrained SPHINX-v2-1k from [Hugging face](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-v2-1k)/[Baidu](https://pan.baidu.com/s/1PKCf515EGmSnSZ8teERHjQ?pwd=88z0)(提取码：88z0) After downloading, place the model in the "accessory/checkpoints/sphinx-v2-1k" directory.
+
+  - You can find the pre-training configuration at [vp_pretrain.yaml](./accessory/config/data/vp_pretrain.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
+
   - Set the relevant model path in the run script.
+
   - Start the pre-training process by running the `bash scripts/train_sphinx-v_pretrain_stage1.sh`.
 
 - **Stage2: Multi-Task End-to-End Supervised Finetuning**
   - Download SPHINX-V Stage-1 Pre-training Weights from [Hugging Face](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) or [Baidu](). Alternatively, you may use your own model weights trained from Stage 1.
+
+  - You can find the fine-tuning configuration at [vp_finetune.yaml](./accessory/config/data/vp_finetune.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
+
   - Set the relevant model path in the run script.
+  
   - Run `bash scripts/train_sphinx-v_finetune_stage2.sh`.
 
 
