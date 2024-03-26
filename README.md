@@ -22,7 +22,7 @@
 
 ## 💥 News
 
-- **[2024.03.28]** 🔥 We released the [SPHINX-V 13B model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) and [online demo](http://111.0.123.204:8000/) for Osprey.
+- **[2024.03.28]** 🔥 We released the [SPHINX-V 13B model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) and [online demo](http://111.0.123.204:8000/).
 
 - **[2024.03.28]** 🚀 We release the [arXiv paper](https://arxiv.org/pdf/2403.14624) and make a home page in the [Project Page](https://mathverse-cuhk.github.io/).
 
@@ -54,13 +54,13 @@ Specifically, the model is named **SPHINX-V**, a new multimodal large language m
 </p>
 
 
-## 🚀 Ability Show
+## 🚀 Examples Show
 
 <details>
 <summary>🔍 Natural Image Domain</summary>
 
 <p align="center">
-    <img src="assets/figures/ver1.jpg" width="50%"> <br>
+    <img src="assets/figures/ver1.jpg" width="100%"> <br>
 </p>
 </details>
 
@@ -68,7 +68,7 @@ Specifically, the model is named **SPHINX-V**, a new multimodal large language m
 <summary>🔍 OCR Image Domain</summary>
 
 <p align="center">
-    <img src="assets/figures/ver2.jpg" width="50%"> <br>
+    <img src="assets/figures/ver2.jpg" width="100%"> <br>
 </p>
 </details>
 
@@ -76,7 +76,7 @@ Specifically, the model is named **SPHINX-V**, a new multimodal large language m
 <summary>🔍 Mobile/Website Screenshot Domain</summary>
 
 <p align="center">
-    <img src="assets/figures/ver3.jpg" width="50%"> <br>
+    <img src="assets/figures/ver3.jpg" width="100%"> <br>
 </p>
 </details>
 
@@ -84,13 +84,52 @@ Specifically, the model is named **SPHINX-V**, a new multimodal large language m
 <summary>🔍 Multi-panel Image Domain</summary>
 
 <p align="center">
-    <img src="assets/figures/ver4.jpg" width="50%"> <br>
+    <img src="assets/figures/ver4.jpg" width="100%"> <br>
 </p>
 </details>
 
 
+## 🛠️ Install 
 
-## :white_check_mark: Citation
+1. Clone this repository and navigate to Draw-and-Understand folder
+```
+git clone https://github.com/AFeng-x/Draw-and-Understand.git
+cd Draw-and-Understand
+```
+2. Install packages
+```
+# Create a new conda environment named 'sphinx-v' with Python 3.10
+conda create -n sphinx-v python=3.10 -y
+# Activate the 'sphinx-v' environment
+conda activate sphinx-v
+# Install required packages from 'requirements.txt'
+pip install -r requirements.txt
+```
+3. Optional: Install Flash-Attention
+```
+# Draw-and-Understand is powered by flash-attention for efficient attention computation.
+pip install flash-attn --no-build-isolation
+```
+4. Install Draw-and-Understand as Python Packege
+```
+# go to the root directory of Draw-and-Understand
+cd Draw-and-Understand
+# install Draw-and-Understand
+pip install -e .
+# After this, you will be able to invoke “import SPHINX_V” without the restriction of working directory.
+```
+
+## 📈 Evaluation 
+See [evaluation](./accessory/eval/README.md) for details.
+
+
+## 💌 Acknowledgement
+- [LLaMA-Accessory](https://github.com/haotian-liu/LLaVA): the codebase we built upon.
+- [SAM](https://github.com/facebookresearch/segment-anything): the demo also uses the segmentation result from SAM.
+
+
+
+## 🖊️: Citation
 
 If you find **Draw-and-Understand** useful for your research and applications, please kindly cite using this BibTeX:
 
