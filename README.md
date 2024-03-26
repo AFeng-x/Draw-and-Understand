@@ -151,12 +151,17 @@ accessory/checkpoints/tokenizer
 ```
 
 
-## 📁 Dataset
-All datasets for Stage 1 (pre-training) and Stage 2 (fine-tuning) can be found in [Dataset Preparation](./Data/dataset.md).
+## 📁 MDVP-Dataset
 
-<!-- **MDVP-Data**: 🤗[Hugging Face]() -->
+MDVP-Data is a comprehensive dataset for multi-domain visual-prompt instruction tuning. This dataset encompasses data for both point-level and region-level understanding, designed to enhance a model’s comprehension ability and robustness.
 
-<!-- **MDVP-Bench**: 🤗[Hugging Face]() -->
+Based on MDVP-Data, we also introduce MDVP-Bench, a challenging benchmark designed to evaluate tasks that require a combination of detailed description referrals, inter-relationship analysis, and complex reasoning.
+
+<p align="center">
+    <img src="assets/figures/fig3.jpg" width="80%"> <br>
+</p>
+
+**MDVP-Data**: 🤗[Hugging Face]() and **MDVP-Bench**: 🤗[Hugging Face]()
 
 
 ## 🚀 Training 

@@ -1,6 +1,6 @@
 ## Data
 
-### Stage 1 Pre-training Dataset
+### Stage 1: Pre-training Dataset
 
 - Please download the transformed annotations of each dataset from [Stage-1 Training Annotations]().
 
@@ -19,13 +19,12 @@
 | cocostuff 10k | [Download](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/cocostuff-10k-v1.1.zip) | TotalText | [Download](https://github.com/cs-chan/Total-Text-Dataset) |
 | cocostuff 164k | [Download](https://github.com/nightrome/cocostuff#downloads) | AITW | [Download](https://github.com/google-research/google-research/tree/master/android_in_the_wild) |
 
-
 **Important notice**: `Visual Genome` should contain all the vg images(VG_100K and VG_100K_2). Merge the image data from the VG_100K and VG_100K_2 folders into one.
 
 - In each annotation JSON file, update the image path to reflect the location of the downloaded image data.
 
 
-### Stage 2 Fine-tuning Dataset
+### Stage 2: Fine-tuning Dataset
 
 - Please download the transformed annotations of each dataset from [Stage-2 Training Annotations]().
 
@@ -39,7 +38,7 @@
 | M6Doc | [Download](https://github.com/HCIILAB/M6Doc/tree/main) |  LaionGPT4v | [Download](https://huggingface.co/datasets/laion/gpt4v-dataset) |
 | VCR | [Download](https://visualcommonsense.com/download/) |  ShareGPT4v | [Download](https://huggingface.co/datasets/Lin-Chen/ShareGPT4V) |
 
-- 3. In each annotation JSON file, update the image path to reflect the location of the downloaded image data.
+- In each annotation JSON file, update the image path to reflect the location of the downloaded image data.
 
 <!-- **Important notice**:  -->
 
