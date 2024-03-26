@@ -118,6 +118,53 @@ cd Draw-and-Understand
 pip install -e .
 # After this, you will be able to invoke “import SPHINX_V” without the restriction of working directory.
 ```
+5. To enable the segmentation ability shown in our official demo, SAM is also needed:
+``` bash
+pip install git+https://github.com/facebookresearch/segment-anything.git
+```
+
+
+## 🤖️ Checkpoints
+
+SPHINX-V-13b Stage-1 Pre-training Weight: 🤗[model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) / [Baidu]()
+
+SPHINX-V-13b Stage-2 Fine-tunings Weight: 🤗[model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) / [Baidu]()
+
+Please download them to your own machine. The file structure should appear as follows:
+```
+accessory/checkpoints/sphinx-v
+├── consolidated.00-of-02.model.pth
+├── consolidated.01-of-02.model.pth
+├── tokenizer.model
+├── config.json
+└── meta.json
+```
+
+## 📁 Dataset
+The all datasets for Stage-1(pre-training) and Stage-2(fine-tuning) can be found in [Dataset preparation](./Data/dataset.md).
+
+**MDVP-Data**: 🤗[Hugging Face](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K)
+
+**MDVP-Bench**: 🤗[Hugging Face](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K)
+
+
+## 🚀 Training 
+
+- **Prepare data**
+  - Please download the annotations of our pre-training data and download the images from public open-source datasets. (Refer to the [Dataset preparation](./Data/dataset.md))
+  - You can find the pre-training configuration at [config](./accessory/config/data/vp_pretrain.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
+
+- **Stage1: Image-Visual Prompt-Text Alignment Pre-training**
+  - Please download our pretrained SPHINX-v2-1k[Hugging face](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-v2-1k)/[Baidu](https://pan.baidu.com/s/1PKCf515EGmSnSZ8teERHjQ?pwd=88z0)(提取码：88z0) After downloading, place the model in the "accessory/checkpoints/sphinx-v2-1k" directory.
+  - Set the relevant model path in the run script.
+  - Start the pre-training process by running the `bash scripts/train_sphinx-v_pretrain_stage1.sh`.
+
+- **Stage2: Multi-Task End-to-End Supervised Finetuning**
+  - Download SPHINX-V Stage-1 Pre-training Weights from [Hugging Face](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) or [Baidu](). Alternatively, you may use your own model weights trained from Stage 1.
+  - Set the relevant model path in the run script.
+  - Run `bash scripts/train_sphinx-v_finetune_stage2.sh`.
+
+
 
 ## 📈 Evaluation 
 See [evaluation](./accessory/eval/README.md) for details.
@@ -126,7 +173,6 @@ See [evaluation](./accessory/eval/README.md) for details.
 ## 💌 Acknowledgement
 - [LLaMA-Accessory](https://github.com/haotian-liu/LLaVA): the codebase we built upon.
 - [SAM](https://github.com/facebookresearch/segment-anything): the demo also uses the segmentation result from SAM.
-
 
 
 ## 🖊️: Citation
