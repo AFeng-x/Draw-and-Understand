@@ -31,11 +31,11 @@
 - **[2024.03.28]** 🚀 We released the traning and [evaluation](./accessory/eval/README.md) code.
 
 
-## 💪 ToDo
+<!-- ## 💪 ToDo
 
-- &nbsp;&nbsp;✅ The *testmini* set of MathVerse will be released at [🤗 Huggingface](https://huggingface.co/datasets/AI4Math/MathVerse) in a week.
+- &nbsp;&nbsp;✅ The *testmini* set of 
 
-- - [x] Coming soon: *CoT Evaluation results*, evaluation tools, and the entire MathVerse dataset
+- - [x] Coming soon: *CoT Evaluation results*, -->
 
 
 ## 👀 Introduction
@@ -126,9 +126,11 @@ pip install git+https://github.com/facebookresearch/segment-anything.git
 
 ## 🤖️ Checkpoints
 
-SPHINX-V-13b Stage-1 Pre-training Weight: 🤗[Hugging Face](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) / [Baidu]()
+Necessary weights and configurations: 🤗[Hugging Face]() / [Baidu]()
 
-SPHINX-V-13b Stage-2 Fine-tunings Weight: 🤗[Hugging Face](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) / [Baidu]()
+SPHINX-V-13b Stage-1 Pre-training Weight: 🤗[Hugging Face]() / [Baidu]()
+
+SPHINX-V-13b Stage-2 Fine-tunings Weight: 🤗[Hugging Face]() / [Baidu]()
 
 Please download them to your own machine. The file structure should appear as follows:
 ```
@@ -140,31 +142,40 @@ accessory/checkpoints/sphinx-v/stage2
 └── meta.json
 ```
 
+```
+accessory/checkpoints/llama-2-13b
+├── params.json
+
+accessory/checkpoints/tokenizer
+├── tokenizer.model
+```
+
+
 ## 📁 Dataset
-All datasets for Stage-1(pre-training) and Stage-2(fine-tuning) can be found in [Dataset preparation](./Data/dataset.md).
+All datasets for Stage 1 (pre-training) and Stage 2 (fine-tuning) can be found in [Dataset Preparation](./Data/dataset.md).
 
-**MDVP-Data**: 🤗[Hugging Face](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K)
+<!-- **MDVP-Data**: 🤗[Hugging Face]() -->
 
-**MDVP-Bench**: 🤗[Hugging Face](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K)
+<!-- **MDVP-Bench**: 🤗[Hugging Face]() -->
 
 
 ## 🚀 Training 
 
 - **Prepare data**
-  - Please download the annotations of our pre-training data and download the images from public open-source datasets. (Refer to the [Dataset preparation](./Data/dataset.md))
+  - Please download the annotations of our pre-training data and images. (Refer to the [Dataset Preparation](./Data/dataset.md))
 
-- **Stage1: Image-Visual Prompt-Text Alignment Pre-training**
-  - Download our pretrained SPHINX-v2-1k Weights from [Hugging face](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-v2-1k)/[Baidu](https://pan.baidu.com/s/1PKCf515EGmSnSZ8teERHjQ?pwd=88z0)(提取码：88z0). Place the model in the "accessory/checkpoints/sphinx-v2-1k" directory.
+- **Stage 1: Image-Visual Prompt-Text Alignment Pre-training**
+  - Download the pretrained SPHINX-v2-1k Weights from [Hugging face](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-v2-1k) or [Baidu](https://pan.baidu.com/s/1PKCf515EGmSnSZ8teERHjQ?pwd=88z0)(88z0). Place the model in the "accessory/checkpoints/sphinx-v2-1k" directory.
   - Download the [ViT-H SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) and place the model in the "accessory/checkpoints/sam" directory.
   - Pre-training configuration is [vp_pretrain.yaml](./accessory/config/data/vp_pretrain.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
-  - Set the relevant model path in the run script.
+  - Update the model paths in the run script.
   - Run `bash scripts/train_sphinx-v_pretrain_stage1.sh`.
 
-- **Stage2: Multi-Task End-to-End Supervised Finetuning**
-  - Download SPHINX-V Stage-1 Pre-training Weights from [Hugging Face](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) or [Baidu](). Alternatively, you may use your own model weights trained from Stage 1.
+- **Stage 2: Multi-Task End-to-End Supervised Finetuning**
+  - Download SPHINX-V Stage-1 Pre-training Weights from [Hugging Face]() or [Baidu](). Alternatively, you may use your own model weights trained from Stage 1.
   - Place the model in the "accessory/checkpoints/sphinx-v/stage1" directory.
   - Fine-tuning configuration is [vp_finetune.yaml](./accessory/config/data/vp_finetune.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
-  - Set the relevant model path in the run script.
+  - Update the model paths in the run script.
   - Run `bash scripts/train_sphinx-v_finetune_stage2.sh`.
 
 
@@ -174,6 +185,7 @@ See [evaluation](./accessory/eval/README.md) for details.
 
 ## 🛩️ Inference
 We provide a simple example for inference in [inference.py](./SPHINX_V/inference.py)
+
 You can launch this script with `torchrun --master_port=1112 --nproc_per_node=1 inference.py`
 
 
@@ -189,7 +201,7 @@ bash run.sh
 
 
 ## 💌 Acknowledgement
-- [LLaMA-Accessory](https://github.com/haotian-liu/LLaVA): the codebase we built upon.
+- [LLaMA-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory): the codebase we built upon.
 - [SAM](https://github.com/facebookresearch/segment-anything): the demo also uses the segmentation result from SAM.
 
 
