@@ -16,14 +16,19 @@
 
 [![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://dreamllm.github.io/) [![arXiv Paper](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)](https://arxiv.org/pdf/2312.10032.pdf) [![Static Badge](https://img.shields.io/badge/Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://111.0.123.204:8000/) [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-blue.svg)](https://github.com/RunpeiDong/ChatDreamer-Private/blob/master/LICENSE)
 
-[[🌐 Webpage](https://mathverse-cuhk.github.io/)] [[📖 Paper](https://arxiv.org/pdf/2403.14624.pdf)] [[🤗 MDVP-Data](https://huggingface.co/datasets/AI4Math/MathVerse)] [[🤗 MDVP-Bench](https://huggingface.co/datasets/AI4Math/MathVerse)] [[🤖️ Model](https://huggingface.co/datasets/AI4Math/MathVerse)] [[🎮 Demo](https://mathverse-cuhk.github.io/#leaderboard)]
+[[🌐 Project Page](https://mathverse-cuhk.github.io/)] [[📖 Paper](https://arxiv.org/pdf/2403.14624.pdf)] [[🤗 MDVP-Data](https://huggingface.co/datasets/AI4Math/MathVerse)] [[🤗 MDVP-Bench](https://huggingface.co/datasets/AI4Math/MathVerse)] [[🤖️ Model](https://huggingface.co/datasets/AI4Math/MathVerse)] [[🎮 Demo](https://mathverse-cuhk.github.io/#leaderboard)]
 
 </div>
 
 ## 💥 News
 
-- **[2024.03.28]** 🚀 We release the [arXiv paper](https://arxiv.org/pdf/2403.14624) and some data samples in the [Webpage](https://mathverse-cuhk.github.io/#visualization).
-<!-- - **[2024.03.22]** 🎉 **MathVerse** has been selected as 🤗 [***Hugging Face Daily Papers***](https://huggingface.co/papers/2403.14624)! -->
+- **[2024.03.28]** 🔥 We released the [SPHINX-V 13B model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) and [online demo](http://111.0.123.204:8000/) for Osprey.
+
+- **[2024.03.28]** 🚀 We release the [arXiv paper](https://arxiv.org/pdf/2403.14624) and make a home page in the [Project Page](https://mathverse-cuhk.github.io/).
+
+- **[2024.03.28]** 🔥 We released the [MDVP-Data](https://huggingface.co/datasets/AntGroup-MI/Osprey-724K) dataset and [MDVP-Bench]() benchmark.
+
+- **[2024.03.28]** 🚀 We released the traning and [evaluation](./accessory/eval/README.md) code.
 
 
 ## 💪 ToDo
@@ -55,7 +60,7 @@ Specifically, the model is named **SPHINX-V**, a new multimodal large language m
 <summary>🔍 Natural Image Domain</summary>
 
 <p align="center">
-    <img src="figs/ver1.png" width="50%"> <br>
+    <img src="assets/figures/ver1.jpg" width="50%"> <br>
 </p>
 </details>
 
@@ -63,7 +68,7 @@ Specifically, the model is named **SPHINX-V**, a new multimodal large language m
 <summary>🔍 OCR Image Domain</summary>
 
 <p align="center">
-    <img src="figs/ver2.png" width="50%"> <br>
+    <img src="assets/figures/ver2.jpg" width="50%"> <br>
 </p>
 </details>
 
@@ -71,7 +76,7 @@ Specifically, the model is named **SPHINX-V**, a new multimodal large language m
 <summary>🔍 Mobile/Website Screenshot Domain</summary>
 
 <p align="center">
-    <img src="figs/ver3.png" width="50%"> <br>
+    <img src="assets/figures/ver3.jpg" width="50%"> <br>
 </p>
 </details>
 
@@ -79,6 +84,21 @@ Specifically, the model is named **SPHINX-V**, a new multimodal large language m
 <summary>🔍 Multi-panel Image Domain</summary>
 
 <p align="center">
-    <img src="figs/ver4.png" width="50%"> <br>
+    <img src="assets/figures/ver4.jpg" width="50%"> <br>
 </p>
 </details>
+
+
+
+## :white_check_mark: Citation
+
+If you find **Draw-and-Understand** useful for your research and applications, please kindly cite using this BibTeX:
+
+```latex
+@article{zhang2024mathverse,
+  title={MathVerse: Does Your Multi-modal LLM Truly See the Diagrams in Visual Math Problems?},
+  author={Zhang, Renrui and Jiang, Dongzhi and Zhang, Yichi and Lin, Haokun and Guo, Ziyu and Qiu, Pengshuo and Zhou, Aojun and Lu, Pan and Chang, Kai-Wei and Gao, Peng and others},
+  journal={arXiv preprint arXiv:2403.14624},
+  year={2024}
+}
+```
