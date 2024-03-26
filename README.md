@@ -187,9 +187,6 @@ cd accessory/demos
 bash run.sh
 ```
 
-We provide a simple example for inference in [inference.py](./SPHINX_V/inference.py)
-You can launch this script with `torchrun --master_port=1112 --nproc_per_node=1 inference.py`
-
 
 ## 💌 Acknowledgement
 - [LLaMA-Accessory](https://github.com/haotian-liu/LLaVA): the codebase we built upon.
