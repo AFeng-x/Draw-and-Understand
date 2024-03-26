@@ -154,8 +154,8 @@ All datasets for Stage-1(pre-training) and Stage-2(fine-tuning) can be found in 
   - Please download the annotations of our pre-training data and download the images from public open-source datasets. (Refer to the [Dataset preparation](./Data/dataset.md))
 
 - **Stage1: Image-Visual Prompt-Text Alignment Pre-training**
-  - Download our pretrained SPHINX-v2-1k Weights from [Hugging face](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-v2-1k)/[Baidu](https://pan.baidu.com/s/1PKCf515EGmSnSZ8teERHjQ?pwd=88z0)(提取码：88z0).
-  - Place the model in the "accessory/checkpoints/sphinx-v2-1k" directory.
+  - Download our pretrained SPHINX-v2-1k Weights from [Hugging face](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-v2-1k)/[Baidu](https://pan.baidu.com/s/1PKCf515EGmSnSZ8teERHjQ?pwd=88z0)(提取码：88z0). Place the model in the "accessory/checkpoints/sphinx-v2-1k" directory.
+  - Download the [ViT-H SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) and place the model in the "accessory/checkpoints/sam" directory.
   - Pre-training configuration is [vp_pretrain.yaml](./accessory/config/data/vp_pretrain.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
   - Set the relevant model path in the run script.
   - Run `bash scripts/train_sphinx-v_pretrain_stage1.sh`.
@@ -168,9 +168,27 @@ All datasets for Stage-1(pre-training) and Stage-2(fine-tuning) can be found in 
   - Run `bash scripts/train_sphinx-v_finetune_stage2.sh`.
 
 
-
 ## 📈 Evaluation 
 See [evaluation](./accessory/eval/README.md) for details.
+
+
+## 🛩️ Inference
+We provide a simple example for inference in [inference.py](./SPHINX_V/inference.py)
+You can launch this script with `torchrun --master_port=1112 --nproc_per_node=1 inference.py`
+
+
+## 🪁 Host Offline Demo
+💻 **requirments:** 
+1. For this demo, it needs to prepare the SPHINX-V stage-2 checkpoints and ViT-H SAM model, and place them in the `accessory/checkpoints/` directory.
+2. Make sure you have installed Segment Anything.
+3. Run.
+```
+cd accessory/demos
+bash run.sh
+```
+
+We provide a simple example for inference in [inference.py](./SPHINX_V/inference.py)
+You can launch this script with `torchrun --master_port=1112 --nproc_per_node=1 inference.py`
 
 
 ## 💌 Acknowledgement
