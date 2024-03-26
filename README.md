@@ -126,13 +126,13 @@ pip install git+https://github.com/facebookresearch/segment-anything.git
 
 ## 🤖️ Checkpoints
 
-SPHINX-V-13b Stage-1 Pre-training Weight: 🤗[model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) / [Baidu]()
+SPHINX-V-13b Stage-1 Pre-training Weight: 🤗[Hugging Face](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) / [Baidu]()
 
-SPHINX-V-13b Stage-2 Fine-tunings Weight: 🤗[model](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) / [Baidu]()
+SPHINX-V-13b Stage-2 Fine-tunings Weight: 🤗[Hugging Face](https://huggingface.co/sunshine-lwt/Osprey-7b/tree/main) / [Baidu]()
 
 Please download them to your own machine. The file structure should appear as follows:
 ```
-accessory/checkpoints/sphinx-v
+accessory/checkpoints/sphinx-v/stage2
 ├── consolidated.00-of-02.model.pth
 ├── consolidated.01-of-02.model.pth
 ├── tokenizer.model
