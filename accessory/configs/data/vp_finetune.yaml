@@ -1,0 +1,10 @@
+### Please download all the annotations data for stage 2 fine-tuning and place them as the below structure.
+### (https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning)
+
+META:
+  -
+    path: 'stage_2_fine-tuning/brief_caption/VG_region_brief_caption.json'
+    type: 'image_text'
+
+
+  

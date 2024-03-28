@@ -1,0 +1,8 @@
+### Please download all the annotations data for stage 1 pre-training and place them as the below structure.
+### (https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_1_pre-training)
+
+META:
+  -
+    path: 'stage_1_pre-training/point2label/LVIS_point2label.json'
+    type: 'image_text'
+ 
