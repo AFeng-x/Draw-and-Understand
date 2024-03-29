@@ -14,7 +14,7 @@
 
 <div align="center">
 
-[![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://draw-and-understand.github.io/) [![arXiv Paper](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)]() [![Static Badge](https://img.shields.io/badge/Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://111.0.123.204:8000/) [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-blue.svg)](https://github.com/Afeng-x/Draw-and-Understand/LICENSE)
+[![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://draw-and-understand.github.io/) [![arXiv Paper](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)]() [![Static Badge](https://img.shields.io/badge/Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://111.0.123.204:8000/) [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-blue.svg)](https://github.com/Afeng-x//Users/Draw-and-Understand/LICENSE)
 
 [[🌐 Project Page](https://draw-and-understand.github.io/)] [[📖 Paper]()] [[🤗 MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data)] [[🤗 MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench)] [[🤖️ Model](https://huggingface.co/Afeng-x/SPHINX-V-Modele)] [[🎮 Demo](http://111.0.123.204:8000/)]
 
@@ -168,14 +168,14 @@ accessory/checkpoints/tokenizer
 - **Stage 1: Image-Visual Prompt-Text Alignment Pre-training**
   - Download the pretrained SPHINX-v2-1k Weights from [Hugging face](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-v2-1k) or [Baidu](https://pan.baidu.com/s/1PKCf515EGmSnSZ8teERHjQ?pwd=88z0)(88z0). Place the model in the "accessory/checkpoints/sphinx-v2-1k" directory.
   - Download the [ViT-H SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) and place the model in the "accessory/checkpoints/sam" directory.
-  - Pre-training configuration is [vp_pretrain.yaml](./accessory/config/data/vp_pretrain.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
+  - Pre-training configuration is [vp_pretrain.yaml](./accessory/configs/data/vp_pretrain.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
   - Update the model paths in the run script.
   - Run `bash scripts/train_sphinx-v_pretrain_stage1.sh`.
 
 - **Stage 2: Multi-Task End-to-End Supervised Finetuning**
   - Download SPHINX-V Stage-1 Pre-training Weights from [Hugging Face](https://huggingface.co/Afeng-x/SPHINX-V-Model/tree/main/sphinx-v/stage1) or [Baidu]()(xxxx). Alternatively, you may use your own model weights trained from Stage 1.
   - Place the model in the "accessory/checkpoints/sphinx-v/stage1" directory.
-  - Fine-tuning configuration is [vp_finetune.yaml](./accessory/config/data/vp_finetune.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
+  - Fine-tuning configuration is [vp_finetune.yaml](./accessory/configs/data/vp_finetune.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
   - Update the model paths in the run script.
   - Run `bash scripts/train_sphinx-v_finetune_stage2.sh`.
 
