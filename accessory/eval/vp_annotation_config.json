@@ -1,0 +1,154 @@
+{
+    "test_1": {
+        "test": "vp_annotations/lvis_pretrain_box2label.json",
+        "max_new_tokens": 256
+    },
+    "COCOText_box": {
+        "test": "eval/Referring_Object_Classification/COCOText_box.json",
+        "max_new_tokens": 256
+    },
+    "LVIS_box": {
+        "test": "eval/Referring_Object_Classification/LVIS_box.json",
+        "max_new_tokens": 256
+    },
+    "LVIS_point": {
+        "test": "eval/Referring_Object_Classification/LVIS_point.json",
+        "max_new_tokens": 256
+    },
+    "PACO_box": {
+        "test": "eval/Referring_Object_Classification/PACO_box.json",
+        "max_new_tokens": 256
+    },
+    "PACO_point": {
+        "test": "eval/Referring_Object_Classification/PACO_point.json",
+        "max_new_tokens": 256
+    },
+    "Osprey_80_detail_caption": {
+        "test": "eval/Region_Level_Captioning/Osprey_80_detail_caption.json",
+        "max_new_tokens": 1024
+    },
+    "RefCOCOg_brief_caption": {
+        "test": "eval/Region_Level_Captioning/RefCOCOg_brief_caption.json",
+        "max_new_tokens": 256
+    },
+    "android_detailed_caption_box": {
+        "test": "eval/MDVP-Bench/android_detailed_caption/android_detailed_caption_box.json",
+        "max_new_tokens": 256
+    },
+    "android_detailed_caption_point": {
+        "test": "eval/MDVP-Bench/android_detailed_caption/android_detailed_caption_point.json",
+        "max_new_tokens": 256
+    },
+    "android_QA_box": {
+        "test": "eval/MDVP-Bench/android_QA/android_QA_box.json",
+        "max_new_tokens": 256
+    },
+    "android_QA_point": {
+        "test": "eval/MDVP-Bench/android_QA/android_QA_point.json",
+        "max_new_tokens": 256
+    },
+    "multipanel_detailed_caption_box": {
+        "test": "eval/MDVP-Bench/multipanel_detailed_caption/multipanel_detailed_caption_box.json",
+        "max_new_tokens": 1024
+    },
+    "multipanel_detailed_caption_point": {
+        "test": "eval/MDVP-Bench/multipanel_detailed_caption/multipanel_detailed_caption_point.json",
+        "max_new_tokens": 1024
+    },
+    "multipanel_Inter_Relationship_box": {
+        "test": "eval/MDVP-Bench/multipanel_Inter_Relationship/multipanel_Inter_Relationship_box.json",
+        "max_new_tokens": 256
+    },
+    "multipanel_Inter_Relationship_point": {
+        "test": "eval/MDVP-Bench/multipanel_Inter_Relationship/multipanel_Inter_Relationship_point.json",
+        "max_new_tokens": 256
+    },
+    "multipanel_QA_box": {
+        "test": "eval/MDVP-Bench/multipanel_QA/multipanel_QA_box.json",
+        "max_new_tokens": 256
+    },
+    "multipanel_QA_point": {
+        "test": "eval/MDVP-Bench/multipanel_QA/multipanel_QA_point.json",
+        "max_new_tokens": 256
+    },
+    "natural_brief_caption_box": {
+        "test": "eval/MDVP-Bench/natural_brief_caption/natural_brief_caption_box.json",
+        "max_new_tokens": 256
+    },
+    "natural_brief_caption_point": {
+        "test": "eval/MDVP-Bench/natural_brief_caption/natural_brief_caption_point.json",
+        "max_new_tokens": 256
+    },
+    "natural_detailed_caption_box": {
+        "test": "eval/MDVP-Bench/natural_detailed_caption/natural_detailed_caption_box.json",
+        "max_new_tokens": 1024
+    },
+    "natural_detailed_caption_point": {
+        "test": "eval/MDVP-Bench/natural_detailed_caption/natural_detailed_caption_point.json",
+        "max_new_tokens": 1024
+    },
+    "natural_Inter_Relationship_box": {
+        "test": "eval/MDVP-Bench/natural_Inter_Relationship/natural_Inter_Relationship_box.json",
+        "max_new_tokens": 256
+    },
+    "natural_Inter_Relationship_point": {
+        "test": "eval/MDVP-Bench/natural_Inter_Relationship/natural_Inter_Relationship_point.json",
+        "max_new_tokens": 256
+    },
+    "natural_QA_box": {
+        "test": "eval/MDVP-Bench/natural_QA/natural_QA_box.json",
+        "max_new_tokens": 256
+    },
+    "natural_QA_point": {
+        "test": "eval/MDVP-Bench/natural_QA/natural_QA_point.json",
+        "max_new_tokens": 256
+    },
+    "ocr_doc_detailed_caption_box": {
+        "test": "eval/MDVP-Bench/ocr_doc_detailed_caption/ocr_doc_detailed_caption_box.json",
+        "max_new_tokens": 1024
+    },
+    "ocr_doc_detailed_caption_point": {
+        "test": "eval/MDVP-Bench/ocr_doc_detailed_caption/ocr_doc_detailed_caption_point.json",
+        "max_new_tokens": 1024
+    },
+    "ocr_doc_QA_box": {
+        "test": "eval/MDVP-Bench/ocr_doc_QA/ocr_doc_QA_box.json",
+        "max_new_tokens": 256
+    },
+    "ocr_doc_QA_point": {
+        "test": "eval/MDVP-Bench/ocr_doc_QA/ocr_doc_QA_point.json",
+        "max_new_tokens": 256
+    },
+    "ocr_spotting_detailed_caption_box": {
+        "test": "eval/MDVP-Bench/ocr_spotting_detailed_caption/ocr_spotting_detailed_caption_box.json",
+        "max_new_tokens": 1024
+    },
+    "ocr_spotting_detailed_caption_point": {
+        "test": "eval/MDVP-Bench/ocr_spotting_detailed_caption/ocr_spotting_detailed_caption_point.json",
+        "max_new_tokens": 1024
+    },
+    "ocr_spotting_QA_box": {
+        "test": "eval/MDVP-Bench/ocr_spotting_QA/ocr_spotting_QA_box.json",
+        "max_new_tokens": 256
+    },
+    "ocr_spotting_QA_point": {
+        "test": "eval/MDVP-Bench/ocr_spotting_QA/ocr_spotting_QA_point.json",
+        "max_new_tokens": 256
+    },
+    "web_detailed_caption_box": {
+        "test": "eval/MDVP-Bench/web_detailed_caption/web_detailed_caption_box.json",
+        "max_new_tokens": 1024
+    },
+    "web_detailed_caption_point": {
+        "test": "eval/MDVP-Bench/web_detailed_caption/web_detailed_caption_point.json",
+        "max_new_tokens": 1024
+    },
+    "web_QA_box": {
+        "test": "eval/MDVP-Bench/web_QA/web_QA_box.json",
+        "max_new_tokens": 256
+    },
+    "web_QA_point": {
+        "test": "eval/MDVP-Bench/web_QA/web_QA_point.json",
+        "max_new_tokens": 256
+    }
+}
