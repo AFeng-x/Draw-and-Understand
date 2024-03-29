@@ -1,4 +1,4 @@
-<div style="display: flex; justify-content: center;">
+<div align="center">
     <img src="assets/figures/sphinx-v-logo.png" style="width: 8%; height: auto;" alt="Second Image"/>
     <img src="assets/figures/sphinx-v_text.png" style="width: 35%; height: auto;" alt="SPHINX-V Logo"/>
 </div>
