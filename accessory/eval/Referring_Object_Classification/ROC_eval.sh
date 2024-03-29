@@ -1,0 +1,1 @@
+python ROC_eval.py --bert_model "/data1/weifeng/eccv2024/LLaMA2-Accessory/accessory/Osprey/osprey/eval/all-MiniLM-L6-v2" --output_results "/data1/weifeng/github/Draw-and-Understand/accessory/eval/results/_data1_weifeng_eccv2024_LLaMA2-Accessory_accessory_output_stage2_final_epoch0/PACO_box_results.json" --dataset "PACO"
