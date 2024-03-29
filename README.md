@@ -8,15 +8,17 @@
 
 ## 🎨 Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want
 
-[Weifeng Lin](), [Xinyu Wei](), [Ruichuan An](), [Peng Gao](), [Bocheng Zou](), [Yulin Luo](), [Siyuan Huang](), [Shanghang Zhang]() and [Hongsheng Li]()
+[Weifeng Lin](), [Xinyu Wei](), [Ruichuan An](), [Peng Gao]()
+
+[Bocheng Zou](), [Yulin Luo](), [Siyuan Huang](), [Shanghang Zhang]() and [Hongsheng Li]()
 
 </div>
 
 <div align="center">
 
-[![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://draw-and-understand.github.io/) [![arXiv Paper](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)]() [![Static Badge](https://img.shields.io/badge/Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://111.0.123.204:8000/) [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-blue.svg)](https://github.com/Afeng-x//Users/Draw-and-Understand/LICENSE)
+[![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://draw-and-understand.github.io/) [![arXiv Paper](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)]() [![Static Badge](https://img.shields.io/badge/Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://106.14.2.150:10020/) [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-blue.svg)](https://github.com/AFeng-x/Draw-and-Understand/blob/main/LICENSE)
 
-[[🌐 Project Page](https://draw-and-understand.github.io/)] [[📖 Paper]()] [[🤗 MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data)] [[🤗 MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench)] [[🤖️ Model](https://huggingface.co/Afeng-x/SPHINX-V-Modele)] [[🎮 Demo](http://111.0.123.204:8000/)]
+[[🌐 Project Page](https://draw-and-understand.github.io/)] [[📖 Paper]()] [[🤗 MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data)] [[🤗 MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench)] [[🤖️ Model](https://huggingface.co/Afeng-x/SPHINX-V-Modele)] [[🎮 Demo](http://106.14.2.150:10020/)]
 
 </div>
 
@@ -24,18 +26,18 @@
 
 - **[2024.03.28]** 🔥 We released the [MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data) dataset and [MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench) benchmark.
 
-- **[2024.03.28]** 🔥 We released the [SPHINX-V-13B model](https://huggingface.co/Afeng-x/SPHINX-V-Modele) and [online demo](http://111.0.123.204:8000/).
+- **[2024.03.28]** 🔥 We released the [SPHINX-V-13B model](https://huggingface.co/Afeng-x/SPHINX-V-Modele) and [online demo](http://106.14.2.150:10020/).
 
-- **[2024.03.28]** 🚀 We release the [arXiv paper](https://arxiv.org/pdf/2403.14624).
+- **[2024.03.28]** 🚀 We release the [arXiv paper]().
 
-- **[2024.03.28]** 🚀 We released the traning code.
+- **[2024.03.28]** 🚀 We released the traning and [evaluation](accessory/eval/readme.md) code.
 
 
-## 💪 ToDo
+<!-- ## 💪 ToDo
 
-- - [x] Coming soon: Release the evaluation code.
+- - [x] Coming soon: 
 
-<!-- - &nbsp;&nbsp;✅ The *testmini* set of  -->
+- &nbsp;&nbsp;✅ Coming soon:  -->
 
 
 ## 👀 Introduction
@@ -125,11 +127,11 @@ pip install git+https://github.com/facebookresearch/segment-anything.git
 
 ## 🤖️ Checkpoints
 
-<!-- Necessary weights and configurations: 🤗[Hugging Face]() / [Baidu]() -->
+SPHINX-V-13b Stage-1 Pre-training Weight: 🤗[Hugging Face](https://huggingface.co/Afeng-x/SPHINX-V-Model/tree/main/sphinx-v/stage1) / [Baidu](https://pan.baidu.com/s/1VRSHyKrnyyvdJq-I_r85Vg?pwd=i9f5)
 
-SPHINX-V-13b Stage-1 Pre-training Weight: 🤗[Hugging Face](https://huggingface.co/Afeng-x/SPHINX-V-Model/tree/main/sphinx-v/stage1) / [Baidu]()
+SPHINX-V-13b Stage-2 Fine-tunings Weight: 🤗[Hugging Face](https://huggingface.co/Afeng-x/SPHINX-V-Model/tree/main/sphinx-v/stage2) / [Baidu](https://pan.baidu.com/s/1VRSHyKrnyyvdJq-I_r85Vg?pwd=i9f5)
 
-SPHINX-V-13b Stage-2 Fine-tunings Weight: 🤗[Hugging Face](https://huggingface.co/Afeng-x/SPHINX-V-Model/tree/main/sphinx-v/stage2) / [Baidu]()
+Other required weights and configurations: 🤗[Hugging Face](https://huggingface.co/Afeng-x/SPHINX-V-Model/tree/main)
 
 Please download them to your own machine. The file structure should appear as follows:
 ```
@@ -163,7 +165,7 @@ accessory/checkpoints/tokenizer
 ## 🚀 Training 
 
 - **Prepare data**
-  - Please download the annotations of our pre-training data and images. (Refer to the [Dataset Preparation](./Data/dataset.md))
+  - Please download the annotations of our pre-training data and images. (Refer to the [Dataset Preparation](Data/dataset.md))
 
 - **Stage 1: Image-Visual Prompt-Text Alignment Pre-training**
   - Download the pretrained SPHINX-v2-1k Weights from [Hugging face](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-v2-1k) or [Baidu](https://pan.baidu.com/s/1PKCf515EGmSnSZ8teERHjQ?pwd=88z0)(88z0). Place the model in the "accessory/checkpoints/sphinx-v2-1k" directory.
@@ -173,7 +175,7 @@ accessory/checkpoints/tokenizer
   - Run `bash scripts/train_sphinx-v_pretrain_stage1.sh`.
 
 - **Stage 2: Multi-Task End-to-End Supervised Finetuning**
-  - Download SPHINX-V Stage-1 Pre-training Weights from [Hugging Face](https://huggingface.co/Afeng-x/SPHINX-V-Model/tree/main/sphinx-v/stage1) or [Baidu]()(xxxx). Alternatively, you may use your own model weights trained from Stage 1.
+  - Download SPHINX-V Stage-1 Pre-training Weights from [🤖️Checkpoints](https://github.com/AFeng-x/Draw-and-Understand?tab=readme-ov-file#%EF%B8%8F-checkpoints). Alternatively, you may use your own model weights trained from Stage 1.
   - Place the model in the "accessory/checkpoints/sphinx-v/stage1" directory.
   - Fine-tuning configuration is [vp_finetune.yaml](./accessory/configs/data/vp_finetune.yaml). Please ensure that all annotations are included and update the image paths in each JSON file to reflect the paths on your machine.
   - Update the model paths in the run script.

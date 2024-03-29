@@ -52,6 +52,7 @@ def on_draw(evt: gr.SelectData, vtype, masks):
                 y0, y = y, y0
 
             masks_obj[-1] = (x0, y0, x, y)
+
     else:
         # draw
         raise "on_draw shouldn't be called for Free-Form Draw model"
@@ -334,7 +335,7 @@ def gradio_worker(
 
             <p style="font-size:16px;">🖌️ For the Draw-type, one layer represents one area. To include multiple areas at once, simply click the "add layer" button at the bottom left.</p>
 
-            <p style="font-size:16px;">⌛️ Due to network delays, it might take 1 ~ 3 seconds to see the visual prompts. Please wait a bit.</p>
+            <p style="font-size:16px;">⌛️ Due to network delays, it might take 1 ~ 3 seconds to see the visual prompts. *Note that a higher resolution image will have to wait longer. Please wait a bit.</p>
 
             <p style="font-size:16px;">🆑 Click the clear button to create a new chat.</p>
             </div>
@@ -342,7 +343,7 @@ def gradio_worker(
             """)
 
         with gr.Row():
-            with gr.Column(variant="panel", scale=1):
+            with gr.Column(variant="panel", scale=2):
                 with gr.Row():
                     type_selection = gr.Radio(
                         choices=["Point", "Box", "Free-Form Draw"], value="Point", label="Type of Visual Prompt")
@@ -363,7 +364,7 @@ def gradio_worker(
                         interactive=False, headers=["Type", "Data"])
                 with gr.Row():
                     undo_btn = gr.Button('🔙 Undo', variant="secondary")                    
-            with gr.Column(variant="panel", scale=2):
+            with gr.Column(variant="panel", scale=3):
                 with gr.Row():
                     chat_history = gr.Chatbot(visible=False)
                     chat_history_display = gr.Chatbot(label="Chat History")
@@ -394,10 +395,10 @@ def gradio_worker(
                                     value="padded_resize", label="Image Transform", visible=False)
 
         with gr.Row():
-            with gr.Column(scale=1.5):
+            with gr.Column(scale=2):
                 with gr.Row():
                     output_image = gr.Image(interactive=False, label="Segmentation")
-            with gr.Column(scale=2):
+            with gr.Column(scale=3):
                 with gr.Row():
                     gr.Markdown("""
                             <div style="padding: 8px; border-radius: 10px; border: 2px solid green;">
@@ -452,5 +453,3 @@ def gradio_worker(
         share=True,
         server_name="0.0.0.0", # "127.0.0.1"
     )
-
-

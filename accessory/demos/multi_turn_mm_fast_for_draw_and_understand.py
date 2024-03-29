@@ -155,7 +155,7 @@ def model_worker(
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser("LLaMA2-Accessory Chat Demo")
+    parser = argparse.ArgumentParser("Draw-and-Understand Chat Demo")
     group = parser.add_mutually_exclusive_group()
     group.add_argument(
         "--gpu_ids", type=int, nargs="+",

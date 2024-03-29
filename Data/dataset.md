@@ -2,7 +2,7 @@
 
 ### Stage 1: Pre-training Dataset
 
-- Please download the transformed annotations of each dataset from [Stage-1 Training Annotations]().
+- Please download the transformed annotations of each dataset from [Stage-1 Training Annotations](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_1_pre-training).
 
 - Please download the image from the official source.
 
@@ -26,7 +26,7 @@
 
 ### Stage 2: Fine-tuning Dataset
 
-- Please download the transformed annotations of each dataset from [Stage-2 Training Annotations]().
+- Please download the transformed annotations of each dataset from [Stage-2 Training Annotations](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning).
 
 - Please download the image from the official source. The data for stages beyond stage 1 is list below:
 

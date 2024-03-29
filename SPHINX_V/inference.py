@@ -17,7 +17,7 @@ def main() -> None:
     # torch.cuda.set_device(0)
 
     model = SPHINX_V_Model.from_pretrained(
-        pretrained_path="/data1/weifeng/eccv2024/LLaMA2-Accessory/accessory/output/stage2_final/epoch0", 
+        pretrained_path="../accessory/checkpoints/sphinx-v/stage2", 
         llama_type="llama_ens5_vp",
         llama_config="../accessory/checkpoints/llama-2-13b/params.json",
         with_visual=True,
