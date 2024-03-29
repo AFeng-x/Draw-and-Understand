@@ -18,7 +18,7 @@
 
 [![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://draw-and-understand.github.io/) [![arXiv Paper](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)]() [![Static Badge](https://img.shields.io/badge/Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://106.14.2.150:10020/) [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-blue.svg)](https://github.com/AFeng-x/Draw-and-Understand/blob/main/LICENSE)
 
-[[🌐 Project Page](https://draw-and-understand.github.io/)] [[📖 Paper]()] [[🤗 MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data)] [[🤗 MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench)] [[🤖️ Model](https://huggingface.co/Afeng-x/SPHINX-V-Modele)] [[🎮 Demo](http://106.14.2.150:10020/)]
+[[🌐 Project Page](https://draw-and-understand.github.io/)] [[📖 Paper]()] [[🤗 MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data)] [[🤗 MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench)] [[🤖️ Model](https://huggingface.co/Afeng-x/SPHINX-V-Model)] [[🎮 Demo](http://106.14.2.150:10020/)]
 
 </div>
 
@@ -26,7 +26,7 @@
 
 - **[2024.03.28]** 🔥 We released the [MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data) dataset and [MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench) benchmark.
 
-- **[2024.03.28]** 🔥 We released the [SPHINX-V-13B model](https://huggingface.co/Afeng-x/SPHINX-V-Modele) and [online demo](http://106.14.2.150:10020/).
+- **[2024.03.28]** 🔥 We released the [SPHINX-V-13B model](https://huggingface.co/Afeng-x/SPHINX-V-Model) and [online demo](http://106.14.2.150:10020/).
 
 - **[2024.03.28]** 🚀 We release the [arXiv paper]().
 
