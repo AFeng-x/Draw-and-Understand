@@ -16,9 +16,9 @@
 
 <div align="center">
 
-[![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://draw-and-understand.github.io/) [![arXiv Paper](https://img.shields.io/badge/arxiv-2312.10032-ECA8A7?logo=arxiv)]() [![Static Badge](https://img.shields.io/badge/Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://106.14.2.150:10020/) [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-blue.svg)](https://github.com/AFeng-x/Draw-and-Understand/blob/main/LICENSE)
+[![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://draw-and-understand.github.io/) [![arXiv Paper](https://img.shields.io/badge/arxiv-2403.20271-ECA8A7?logo=arxiv)](https://arxiv.org/abs/2403.20271) [![Static Badge](https://img.shields.io/badge/Demo-6B88E3?logo=youtubegaming&logoColor=DAE4EE)](http://106.14.2.150:10020/) [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-blue.svg)](https://github.com/AFeng-x/Draw-and-Understand/blob/main/LICENSE)
 
-[[🌐 Project Page](https://draw-and-understand.github.io/)] [[📖 Paper]()] [[🤗 MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data)] [[🤗 MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench)] [[🤖️ Model](https://huggingface.co/Afeng-x/SPHINX-V-Model)] [[🎮 Demo](http://106.14.2.150:10020/)]
+[[🌐 Project Page](https://draw-and-understand.github.io/)] [[📖 Paper](https://arxiv.org/abs/2403.20271)] [[🤗 MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data)] [[🤗 MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench)] [[🤖️ Model](https://huggingface.co/Afeng-x/SPHINX-V-Model)] [[🎮 Demo](http://106.14.2.150:10020/)]
 
 </div>
 
@@ -28,7 +28,7 @@
 
 - **[2024.03.28]** 🔥 We released the [SPHINX-V-13B model](https://huggingface.co/Afeng-x/SPHINX-V-Model) and [online demo](http://106.14.2.150:10020/).
 
-- **[2024.03.28]** 🚀 We release the [arXiv paper]().
+- **[2024.03.28]** 🚀 We release the [arXiv paper](https://arxiv.org/abs/2403.20271).
 
 - **[2024.03.28]** 🚀 We released the traning and [evaluation](accessory/eval/readme.md) code.
 
@@ -213,6 +213,12 @@ bash run.sh
 If you find our **Draw-and-Understand** project useful for your research and applications, please kindly cite using this BibTeX:
 
 ```latex
-@article{
+@misc{lin2024drawandunderstand,
+      title={Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want}, 
+      author={Weifeng Lin and Xinyu Wei and Ruichuan An and Peng Gao and Bocheng Zou and Yulin Luo and Siyuan Huang and Shanghang Zhang and Hongsheng Li},
+      year={2024},
+      eprint={2403.20271},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
