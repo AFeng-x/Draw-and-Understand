@@ -111,7 +111,7 @@ pip install -r requirements.txt
 # Draw-and-Understand is powered by flash-attention for efficient attention computation.
 pip install flash-attn --no-build-isolation
 ```
-4. Install Draw-and-Understand as Python Packege
+4. Install Draw-and-Understand as Python Package
 ``` bash
 # go to the root directory of Draw-and-Understand
 cd Draw-and-Understand
