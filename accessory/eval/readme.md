@@ -17,7 +17,7 @@ Referring_Object_Classification/
 └── ROC_eval.sh
 ```
 
-Images for LVIS and PACO datasets are sourced from COCO 2017. You can download the images from the [COCO website](https://cocodataset.org/#download). Then, modify the `--img_root` parameter in `eval.sh` to point to the directory where the COCO images are located:
+Images for LVIS and PACO datasets are sourced from COCO 2017. You can download the images from the [COCO website](https://cocodataset.org/#download). Then, modify the `--img_root` parameter in `infer_and_save.sh` to point to the directory where the COCO images are located:
 
 ```shell
 CUDA_VISIBLE_DEVICES=${GPU} PYTHONWARNINGS="ignore" python -W ignore eval.py \
@@ -93,7 +93,7 @@ Download pycocoevalcap (for sphinx-v) from [Google Drive](https://drive.google.c
 
 We use RefCOCOg for brief caption testing, with METEOR and CIDEr as metrics. Images in RefCOCOg are sourced from COCO 2014. Additionally, we follow [Osprey](https://github.com/circleradon/osprey)'s approach by using 80 images from COCO 2017 for detailed caption testing, evaluating the quality of results using GPT-4.
 
-Modify the '--dataset' parameter in `eval.sh` to either 'RefCOCOg_brief_caption' or 'Osprey_80_detail_caption' for respective inference.
+Modify the '--dataset' parameter in `infer_and_save.sh` to either 'RefCOCOg_brief_caption' or 'Osprey_80_detail_caption' for respective inference.
 
 - **Start Eval**
 
@@ -155,7 +155,7 @@ MDVP-Bench/
 
 MDVP-Bench is divided into multiple domains, each domain further divided into point and box visual prompts.
 
-Modify the '--dataset' parameter in `eval.sh` to '{mdvp domain}_{box/point}' for respective inference.
+Modify the '--dataset' parameter in `infer_and_save.sh` to '{mdvp domain}_{box/point}' for respective inference.
 
 - **Start Eval**
 
