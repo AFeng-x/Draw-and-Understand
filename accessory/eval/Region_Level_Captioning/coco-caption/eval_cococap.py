@@ -10,7 +10,7 @@ from json import encoder
 
 def main():
     annFile = "annotations/RefCOCOg_annotation.json"
-    resFile = "results/RefCOCOg.json.json"
+    resFile = ""
     
     with open(annFile, "r") as f:
         gts = json.load(f)
