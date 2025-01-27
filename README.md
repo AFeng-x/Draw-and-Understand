@@ -26,9 +26,7 @@
 
 - **[2025.01.23]** 🎉 Draw-and-Understand is accepted by ICLR 2025
 
-- **[2024.03.28]** 🔥 We released the [MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data) dataset and [MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench) benchmark.
-
-- **[2024.03.28]** 🔥 We released the [SPHINX-V-13B model](https://huggingface.co/Afeng-x/SPHINX-V-Model) and [online demo](http://106.14.2.150:10020/).
+- **[2024.03.28]** 🔥 We released the [MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data) dataset, [MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench) benchmark, and the [SPHINX-V-13B model](https://huggingface.co/Afeng-x/SPHINX-V-Model).
 
 - **[2024.03.28]** 🚀 We release the [arXiv paper](https://arxiv.org/abs/2403.20271).
 
