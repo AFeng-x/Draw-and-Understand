@@ -24,6 +24,8 @@
 
 ## 💥 News
 
+- **[2025.06.08]** 🔥🚀 Perceive Anything Model (PAM) is released. It is a conceptually simple and efficient framework for comprehensive region-level visual understanding in images and videos, enabling simultaneous object segmentation with the generation of diverse, region-specific semantic outputs, including categories, label definition, functional explanations, and detailed captions. Check out [paper](https://arxiv.org/abs/2506.05302), [Website](https://perceive-anything.github.io/), and [Code](https://github.com/Perceive-Anything/PAM) to see new capabilities and improved performance! We have released PAM-1.5b and PAM-3b models.
+
 - **[2025.01.23]** 🎉 Draw-and-Understand is accepted by ICLR 2025
 
 - **[2024.03.28]** 🔥 We released the [MDVP-Data](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/stage_2_fine-tuning/MDVP-Data) dataset, [MDVP-Bench](https://huggingface.co/datasets/Afeng-x/Draw-and-Understand/tree/main/MDVP-bench) benchmark, and the [SPHINX-V-13B model](https://huggingface.co/Afeng-x/SPHINX-V-Model).
