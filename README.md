@@ -215,12 +215,10 @@ bash run.sh
 If you find our **Draw-and-Understand** project useful for your research and applications, please kindly cite using this BibTeX:
 
 ```latex
-@misc{lin2024drawandunderstand,
-      title={Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want}, 
-      author={Weifeng Lin and Xinyu Wei and Ruichuan An and Peng Gao and Bocheng Zou and Yulin Luo and Siyuan Huang and Shanghang Zhang and Hongsheng Li},
-      year={2024},
-      eprint={2403.20271},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{lin2024draw,
+  title={Draw-and-understand: Leveraging visual prompts to enable mllms to comprehend what you want},
+  author={Lin, Weifeng and Wei, Xinyu and An, Ruichuan and Gao, Peng and Zou, Bocheng and Luo, Yulin and Huang, Siyuan and Zhang, Shanghang and Li, Hongsheng},
+  journal={arXiv preprint arXiv:2403.20271},
+  year={2024}
 }
 ```
